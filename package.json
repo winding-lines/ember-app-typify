@@ -19,7 +19,7 @@
   "author": "Marius Seritan <git@winding-lines.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/ember": "winding-lines/at-types-ember",
+    "at-types-ember": "^2.0.0-dev4",
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "^2.0.1",
     "ember-cli": "2.6.2",
@@ -33,7 +33,7 @@
     "ember-cli-qunit": "^1.4.0",
     "ember-cli-release": "^0.2.9",
     "ember-cli-sri": "^2.1.0",
-    "ember-cli-typify": "0.0.5",
+    "ember-cli-typify": "^0.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
