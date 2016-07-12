@@ -10,5 +10,7 @@ function compute() : {value: string} {
   }
 }
 export default Ember.Component.extend({
+  lyft: Ember.inject.service(),
+  cars: Ember.computed.readOnly('lyft.cars'),
   someValue: compute().value
 });
