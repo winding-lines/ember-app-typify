@@ -1,6 +1,7 @@
 
 import Ember from 'ember';
 import * as constants from '../lib/some-const';
+import config from '../config/environment';
 
 // example of using a local-type definition
 import Hopscotch from 'npm:hopscotch';
