@@ -41,5 +41,7 @@
     "ember-welcome-page": "^1.0.1",
     "loader.js": "^4.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "hopscotch": "^0.2.5"
+  }
 }
