@@ -3,6 +3,10 @@ import Ember from 'ember';
 import * as constants from '../lib/some-const';
 import config from '../config/environment';
 
+import * as CodeMirror from 'npm:codemirror';
+import _CodeMirrorJs from 'npm:codemirror/mode/javascript/javascript';
+
+
 // example of using a local-type definition
 import Hopscotch from 'npm:hopscotch';
 
@@ -10,7 +14,7 @@ function compute(): { value: string } {
   if (constants.CHANGE) {
     return { value: 'from ts' }
   } else {
-    return { value: 'won\'t happen' }
+    return { value: 'won\'t happen' + config.environment }
   }
 }
 
