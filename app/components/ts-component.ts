@@ -7,8 +7,50 @@ import * as CodeMirror from 'npm:codemirror';
 import _CodeMirrorJs from 'npm:codemirror/mode/javascript/javascript';
 
 
+type Promise<T> = Ember.RSVP.Promise<T, any>;
+
 // example of using a local-type definition
 import Hopscotch from 'npm:hopscotch';
+
+/**
+ * Associate a name with an age, model an intermediary step in some computation.
+ */
+class NameAge {
+  constructor(public name: string, public age: number) {
+
+  }
+  static shape(pairs: [string, number][]): NameAge[] {
+    let things = pairs.map( pair => new NameAge(pair[0], pair[1]));
+    return things;
+  }
+}
+
+/**
+ * Represent a person, model a final step in some computation.
+ */
+class Person {
+  constructor(public name: string, public age: number, public gender: string) {}
+
+  static shape(pairs: NameAge[]): Promise<Person[]> {
+    return new Ember.RSVP.Promise( resolve => {
+      let people = pairs.map( pair => new Person(pair.name, pair.age, 'unknown'));
+      resolve(people);
+    });
+  }
+}
+
+function fetchAges(names: string[]) : Promise<[string, number][]> {
+  return new Ember.RSVP.Promise(resolve=>{
+    resolve(names.map(n => {[n,42]}))
+  });
+}
+
+
+function promisesPromises(names: string[]): Promise<Person[]> {
+  return fetchAges(names)
+    .then(NameAge.shape)
+    .then(Person.shape);
+}
 
 function compute(): { value: string } {
   if (constants.CHANGE) {
