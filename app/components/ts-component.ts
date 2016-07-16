@@ -9,7 +9,7 @@ import _CodeMirrorJs from 'npm:codemirror/mode/javascript/javascript';
 
 type Promise<T> = Ember.RSVP.Promise<T, any>;
 
-// example of using a local-type definition
+// example of using a local-type definition for an ember-browserify module
 import Hopscotch from 'npm:hopscotch';
 
 /**

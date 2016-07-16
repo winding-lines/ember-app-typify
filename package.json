@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "codemirror": "^5.16.0",
+    "ember-browserify": "^1.1.11",
     "hopscotch": "^0.2.5"
   }
 }
