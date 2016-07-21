@@ -1,0 +1,44 @@
+{
+  "name": "@types/codemirror",
+  "version": "0.0.28",
+  "description": "TypeScript definitions for CodeMirror",
+  "main": "",
+  "scripts": {},
+  "author": {
+    "name": "mihailik",
+    "email": "https://github.com/mihailik"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "license": "MIT",
+  "typings": "index.d.ts",
+  "dependencies": {},
+  "_id": "@types/codemirror@0.0.28",
+  "_shasum": "6f370d63973de205b1c80c790551aaaccb59d8ec",
+  "_from": "@types/codemirror@0.0.28",
+  "_resolved": "https://registry.npmjs.org/@types/codemirror/-/codemirror-0.0.28.tgz",
+  "_npmVersion": "3.10.3",
+  "_nodeVersion": "6.3.0",
+  "_npmUser": {
+    "name": "types",
+    "email": "ts-npm-types@microsoft.com"
+  },
+  "dist": {
+    "shasum": "6f370d63973de205b1c80c790551aaaccb59d8ec",
+    "tarball": "https://registry.npmjs.org/@types/codemirror/-/codemirror-0.0.28.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "types",
+      "email": "ryan.cavanaugh@microsoft.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/codemirror-0.0.28.tgz_1468505839290_0.8911395240575075"
+  },
+  "directories": {},
+  "readme": "ERROR: No README data found!"
+}

@@ -1,0 +1,26 @@
+{
+    "authors": "mihailik <https://github.com/mihailik>",
+    "definitionFilename": "index.d.ts",
+    "libraryDependencies": [],
+    "moduleDependencies": [],
+    "libraryMajorVersion": "0",
+    "libraryMinorVersion": "0",
+    "libraryName": "CodeMirror",
+    "typingsPackageName": "codemirror",
+    "projectName": "https://github.com/marijnh/CodeMirror",
+    "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+    "sourceBranch": "types-2.0",
+    "kind": "UMD",
+    "globals": [
+        "CodeMirror"
+    ],
+    "declaredModules": [],
+    "files": [
+        "codemirror-matchbrackets.d.ts",
+        "codemirror-runmode.d.ts",
+        "codemirror-showhint.d.ts",
+        "index.d.ts",
+        "searchcursor.d.ts"
+    ],
+    "contentHash": "e563b1b4f0c4cbc6590def133d693a55c08096005f2789073ea2075b56e8d2f7"
+}
